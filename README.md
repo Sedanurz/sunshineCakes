@@ -30,7 +30,10 @@ PASS=kendisifren
 
 🚀 Kurulum
 git clone https://github.com/kullaniciadi/sunshine-pastane.git
+
 cd sunshine-pastane
+
 npm install
+
 npm start
 Not: .env dosyanızı oluşturmayı unutmayın. Güvenlik nedeniyle .env dosyası paylaşılmamaktadır.

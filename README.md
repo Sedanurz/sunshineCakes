@@ -1,38 +1,34 @@
-Sunshine – Pastane Temalı Web Uygulaması
+Sunshine – Bakery-Themed Web Application
 
-Sunshine, pastel tonlarda tasarlanmış, çok dilli destek sunan, responsive bir pastane web sitesidir. Kullanıcı dostu arayüzüyle hem görsel estetik hem de temel işlevsellik sunmayı hedefler.
+Sunshine is a responsive, multi-language bakery-themed website built with a soft, pastel UI. It focuses on both aesthetic design and basic functionality through simple backend integration.
 
-🔧 Kullanılan Teknolojiler
+🔧 Tech Stack
+Tailwind CSS – Utility-first modern CSS framework
 
-Tailwind CSS – Modern ve utility-first CSS framework
+HTML5 – Semantic markup
 
-HTML5 – Semantik yapı
+Vanilla JavaScript – Interactivity & form validation
 
-Vanilla JavaScript – Form doğrulama ve etkileşimler
+Node.js + Nodemailer – Handles email sending via contact form
 
-Node.js + Nodemailer – Backend tarafında iletişim formu aracılığıyla e-posta gönderimi
+📌 Features
+Fully responsive layout
 
-📌 Özellikler
+Turkish and English language support
 
-Mobil uyumlu (responsive) tasarım
+Custom handwritten-style logo
 
-Türkçe ve İngilizce dil desteği
+Contact form with email functionality
 
-El yazısı tarzında özgün logo
+Clean and scalable code structure
 
-İletişim formu ile direkt e-posta gönderimi
-
-Temiz ve ölçeklenebilir kod yapısı
-
-📨 İletişim Formu
-
-İletişim formu, Node.js backend yapısıyla hazırlanmış olup Nodemailer kullanılarak belirtilen e-posta adresine form verisini gönderir.
-.env dosyası aşağıdaki ortam değişkenlerini içermelidir:
+📨 Contact Form
+The form is handled via Node.js and sends data using Nodemailer. Environment variables required in your .env file:
 
 EMAIL=kendimail@gmail.com
 PASS=kendisifren
 
-🚀 Kurulum
+🚀 Installation
 git clone https://github.com/kullaniciadi/sunshine-pastane.git
 
 cd sunshine-pastane
@@ -40,4 +36,12 @@ cd sunshine-pastane
 npm install
 
 npm start
-Not: .env dosyanızı oluşturmayı unutmayın. Güvenlik nedeniyle .env dosyası paylaşılmamaktadır.
+Note: Do not forget to set up your .env file. It is excluded for security purposes.
+
+📞 Contact
+For access to the demo or any questions about this project:
+
+Developer: Seda Nur ZURNACI
+Email: sedanur.zurnaci@gmail.com
+LinkedIn: linkedin.com/in/seda-nur-zurnacı
+GitHub: https://github.com/Sedanurz

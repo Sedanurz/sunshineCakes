@@ -42,6 +42,9 @@ Note: Do not forget to set up your .env file. It is excluded for security purpos
 For access to the demo or any questions about this project:
 
 Developer: Seda Nur ZURNACI
+
 Email: sedanur.zurnaci@gmail.com
+
 LinkedIn: linkedin.com/in/seda-nur-zurnacı
+
 GitHub: https://github.com/Sedanurz

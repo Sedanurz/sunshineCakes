@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine-En güzel anlara yumuşacık dokunuşlar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="img/logo1(1)(1).png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.11.1/css/flag-icons.min.css" />
+</head>
+<body class="bg-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-pink-50 shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-28 items-center">
+        
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-5xl text-pink-500 font-bold" style="font-family: 'Great Vibes', cursive;">
+          SunshineCakes
+        </div>
+        
+        <!-- Hamburger buton (mobil) -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-pink-500 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          </button>
+        </div>
+    
+        <!-- Menü (masaüstü) -->
+      <div class="hidden md:flex space-x-10 text-gray-700 font-semibold text-lg justify-center w-full">
+        <a href="index.html" class="hover:text-pink-500 transition-colors duration-300 relative group" data-tr="Anasayfa" data-en="Home">
+        Anasayfa
+        <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="aboutUs.html" class="hover:text-pink-500 transition-colors duration-300 relative group" data-tr="Hakkımızda" data-en="About Us">
+          Hakkımızda
+          <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        <a href="cakes.html" class="hover:text-pink-500 transition-colors duration-300 relative group" data-tr="Ürünlerimiz" data-en="Products">
+        Ürünlerimiz
+        <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="contact.html" class="hover:text-pink-500 transition-colors duration-300 relative group" data-tr="İletişim" data-en="Contact">
+        İletişim
+        <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </div>
+  <div class="relative inline-block text-left">
+      <button id="langToggle" class="flex items-center space-x-1 text-pink-400 hover:text-pink-800">
+        <i class="fas fa-globe text-lg"></i>
+        <span class="text-sm">TR</span> <!-- Varsayılan dil -->
+      </button>
+      <!-- Dropdown Menü -->
+      <div id="langMenu" class="hidden absolute right-0 mt-2 w-28 bg-white border rounded-lg shadow-lg z-50">
+        <button class="block w-full text-left px-4 py-2 hover:bg-pink-100 text-sm" data-lang="tr"><span id="currentFlag" class="fi fi-tr"></span> <!-- Varsayılan bayrak: Türkiye -->Türkçe</button>
+        <button class="block w-full text-left px-4 py-2 hover:bg-pink-100 text-sm" data-lang="en"><span class="fi fi-gb"></span> English</button>
+      </div>
+    </div>
+    
+      </div>
+    
+        <!-- Menü (mobilde açılan kısım) -->
+      <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 text-gray-700 font-semibold text-lg text-center">
+          
+        <a href="index.html" class="block hover:text-pink-500" data-tr="Anasayfa" data-en="Home">Anasayfa</a>
+        <a href="aboutUs.html" class="block hover:text-pink-500" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a>
+        <a href="cakes.html" class="block hover:text-pink-500" data-tr="Ürünlerimiz" data-en="Products">Ürünlerimiz</a>
+        <a href="contact.html" class="block hover:text-pink-500" data-tr="İletişim" data-en="Contact">İletişim</a>
+        <a href="contact.html" class="block bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors duration-300" data-tr="Bize Ulaşın" data-en="Contact Us">
+          Bize Ulaşın
+        </a>
+      </div>
+      </div>
+      </div>
+    </nav>
+    <section class="bg-gradient-to-b from-pink-100 to-white py-16 px-4">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+        <!-- İletişim Bilgileri -->
+        <div>
+          <h2 class="text-3xl font-bold text-pink-600 mb-4" 
+              data-tr="BİZE ULAŞIN" 
+              data-en="Contact Us">
+            BİZE ULAŞIN
+          </h2>
+        
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed"
+             data-tr="Her türlü soru, öneri ve özel pasta talepleriniz için bizimle iletişime geçmekten çekinmeyin. Sunshine ekibi olarak size yardımcı olmaktan mutluluk duyarız." 
+             data-en="Feel free to contact us for any questions, suggestions, or custom cake requests. As the Sunshine team, we're happy to help you.">
+            Her türlü soru, öneri ve özel pasta talepleriniz için bizimle iletişime geçmekten çekinmeyin. Sunshine ekibi olarak size yardımcı olmaktan mutluluk duyarız.
+          </p>
+        
+          <ul class="text-gray-600 space-y-3">
+            <li><i class="fas fa-envelope text-pink-500 mr-2"></i>sunshincaks41.@gmail.com</li>
+            <li><i class="fas fa-phone text-pink-500 mr-2"></i> +90 5XX XXX XX XX</li>
+            <li><i class="fas fa-map-marker-alt text-pink-500 mr-2"></i> 
+              <span data-tr="Kocaeli", Türkiye" data-en="Kocaeli, Turkey">Kocaeli, Türkiye</span>
+            </li>
+          </ul>
+        
+          <div class="flex space-x-4 mt-6 text-pink-600 text-xl">
+            <a href="https://www.instagram.com/sunsihnecakes " class="hover:text-pink-400 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-pink-400 transition" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-pink-400 transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        
+        <!-- İletişim Formu -->
+        <form id="contact-form" class="bg-white shadow-lg rounded-2xl p-8 space-y-6">
+          <div>
+            <label class="block text-gray-700 font-medium mb-1" data-tr="Ad Soyad" data-en="Full Name">Ad Soyad</label>
+            <input type="text" name="name" class="w-full border border-pink-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-300" required>
+          </div>
+        
+          <div>
+            <label class="block text-gray-700 font-medium mb-1" data-tr="E-posta" data-en="Email">E-posta</label>
+            <input type="email" name="email" class="w-full border border-pink-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-300" required>
+          </div>
+        
+          <div>
+            <label class="block text-gray-700 font-medium mb-1" data-tr="Mesajınız" data-en="Your Message">Mesajınız</label>
+            <textarea rows="5" name="message" class="w-full border border-pink-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-pink-300" required></textarea>
+          </div>
+        
+          <button type="submit" class="w-full bg-pink-500 text-white py-3 rounded-lg hover:bg-pink-600 transition duration-300 font-semibold"
+                  data-tr="Gönder" data-en="Send">
+            Gönder
+          </button>
+
+          <!-- Başarı/Hata Mesajı Alanı -->
+          <div id="form-message" class="hidden text-center p-3 rounded-lg mt-4"></div>
+        </form>
+      </div>
+    </section>    
+    <footer class="bg-pink-50 text-gray-700 py-6 mt-12 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <!-- Marka adı veya bilgi -->
+            <p class="mb-4 text-base font-semibold text-gray-600 text-center" data-tr="© 2025 Sunshine Pastaevi. Tüm hakları saklıdır." data-en="© 2025 Sunshine Bakery. All rights reserved.">
+                © 2025 Sunshine Pastaevi. Tüm hakları saklıdır.
+            </p>
+    
+            <!-- Sosyal medya ikonları -->
+            <p class="text-pink-600 font-semibold text-lg mb-2"data-tr="Bizi Takip Edin"
+            data-en="Follow Us">Bizi Takip Edin</p>
+            <div class="flex space-x-4 items-center justify-center text-center">
+                <a href="mailto:info@sunshine.com" class="hover:text-pink-500 transition-transform transform hover:scale-125 duration-300" aria-label="E-posta">
+                <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/sunsihnecakes " class="hover:text-pink-500 transition-transform transform hover:scale-125 duration-300" aria-label="Instagram">
+                <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-pink-600 transition-transform transform hover:scale-125 duration-300" aria-label="Facebook">
+                <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-pink-400 transition-transform transform hover:scale-125 duration-300" aria-label="Twitter">
+                <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-pink-500 transition-transform transform hover:scale-125 duration-300" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-pink-700 transition-transform transform hover:scale-125 duration-300" aria-label="LinkedIn">
+                <i class="fab fa-linkedin text-xl"></i>
+                </a>
+            </div>
+            <span class="text-base italic text-gray-400 font-medium mt-4">Designed by SZ</span>
+        </div>
+    </footer>  
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+      
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+    </script>
+  <script>
+    // Dil değiştirme fonksiyonu
+    function switchLanguage(lang) {
+        document.querySelectorAll('[data-tr], [data-en]').forEach(el => {
+            el.textContent = el.getAttribute(`data-${lang}`);
+        });
+    }
+
+    // Dil seçimi ve localStorage yönetimi
+    const toggleBtn = document.getElementById("langToggle");
+    const langMenu = document.getElementById("langMenu");
+
+    // Sayfa yüklendiğinde localStorage'dan dil tercihini al ve uygula
+    document.addEventListener("DOMContentLoaded", () => {
+        const savedLang = localStorage.getItem("language") || "tr"; // Varsayılan dil: Türkçe
+        toggleBtn.querySelector("span").textContent = savedLang.toUpperCase();
+        switchLanguage(savedLang);
+    });
+
+    // Dil menüsünü aç/kapat
+    toggleBtn.addEventListener("click", () => {
+        langMenu.classList.toggle("hidden");
+    });
+
+    // Dil seçildiğinde localStorage'a kaydet ve tüm içeriği güncelle
+    langMenu.querySelectorAll("button").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const selectedLang = btn.getAttribute("data-lang");
+            toggleBtn.querySelector("span").textContent = selectedLang.toUpperCase();
+            
+            // Dil tercihini localStorage'a kaydet
+            localStorage.setItem("language", selectedLang);
+            
+            // Sayfadaki içeriği güncelle
+            switchLanguage(selectedLang);
+            
+            langMenu.classList.add("hidden");
+        });
+    });
+</script>
+    <!-- Form Gönderme ve Temizleme İşlemi -->
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Formun varsayılan gönderimini engelle
+
+            const formData = new FormData(contactForm);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                message: formData.get('message')
+            };
+
+            try {
+                const response = await fetch('/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams(data).toString()
+                });
+
+                const result = await response.text();
+                formMessage.classList.remove('hidden');
+                formMessage.classList.add(result.includes('başarıyla') ? 'bg-green-100' : 'bg-red-100');
+                formMessage.classList.add(result.includes('başarıyla') ? 'text-green-700' : 'text-red-700');
+                formMessage.textContent = result;
+
+                if (result.includes('başarıyla')) {
+                    contactForm.reset(); // Formu temizle
+                }
+
+                // Mesajı 5 saniye sonra gizle
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+
+            } catch (error) {
+                formMessage.classList.remove('hidden');
+                formMessage.classList.add('bg-red-100', 'text-red-700');
+                formMessage.textContent = 'Bir hata oluştu. Lütfen tekrar deneyin.';
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>

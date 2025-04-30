@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine-En güzel anlara yumuşacık dokunuşlar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="img/logo1(1)(1).png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.11.1/css/flag-icons.min.css" />
+</head>
+<body class="bg-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-pink-50 shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-28 items-center">
+        
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-5xl text-pink-500 font-bold" style="font-family: 'Great Vibes', cursive;">
+            SunshineCakes
+          </div>
+          
+        
+        <!-- Hamburger buton (mobil) -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-pink-500 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          </button>
+        </div>
+    
+        <!-- Menü (masaüstü) -->
+      <div class="hidden md:flex space-x-10 text-gray-700 font-semibold text-lg justify-center w-full">
+        <a href="index.html" class="hover:text-pink-500 transition-colors duration-300 relative group" data-tr="Anasayfa" data-en="Home">
+        Anasayfa
+        <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="aboutUs.html" class="hover:text-pink-500 transition-colors duration-300 relative group" data-tr="Hakkımızda" data-en="About Us">
+          Hakkımızda
+          <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        <a href="cakes.html" class="hover:text-pink-500 transition-colors duration-300 relative group" data-tr="Ürünlerimiz" data-en="Products"></a>
+        
+        <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="contact.html" class="hover:text-pink-500 transition-colors duration-300 relative group" data-tr="İletişim" data-en="Contact">
+        İletişim
+        <span class="absolute left-0 bottom-0 w-0 h-[3px] bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </div>
+  <div class="relative inline-block text-left">
+      <button id="langToggle" class="flex items-center space-x-1 text-pink-400 hover:text-pink-800">
+        <i class="fas fa-globe text-lg"></i>
+        <span class="text-sm">TR</span> <!-- Varsayılan dil -->
+      </button>
+      <!-- Dropdown Menü -->
+      <div id="langMenu" class="hidden absolute right-0 mt-2 w-28 bg-white border rounded-lg shadow-lg z-50">
+        <button class="block w-full text-left px-4 py-2 hover:bg-pink-100 text-sm" data-lang="tr"><span id="currentFlag" class="fi fi-tr"></span> <!-- Varsayılan bayrak: Türkiye -->Türkçe</button>
+        <button class="block w-full text-left px-4 py-2 hover:bg-pink-100 text-sm" data-lang="en"><span class="fi fi-gb"></span> English</button>
+      </div>
+    </div>
+      </div>
+    
+        <!-- Menü (mobilde açılan kısım) -->
+      <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2 text-gray-700 font-semibold text-lg text-center">
+          
+        <a href="index.html" class="block hover:text-pink-500" data-tr="Anasayfa" data-en="Home">Anasayfa</a>
+        <a href="aboutUs.html" class="block hover:text-pink-500" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a>
+        <a href="cakes.html" class="block hover:text-pink-500" data-tr="Ürünlerimiz" data-en="Products">
+          
+        </a>
+        <a href="contact.html" class="block hover:text-pink-500" data-tr="İletişim" data-en="Contact">İletişim</a>
+        <a href="contact.html" class="block bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors duration-300" data-tr="Bize Ulaşın" data-en="Contact Us">
+          Bize Ulaşın
+        </a>
+      </div>
+      </div>
+      </div>
+    </nav>
+    <section class="bg-gradient-to-b from-pink-100 to-white py-16 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          
+          <!-- Görsel Alanı -->
+          <div class="flex-2 w-full md:w-1/2">
+            <img src="img/cake13.avif" alt="Hakkımızda" class="rounded-xl shadow-lg w-full object-cover max-h-[400px]" />
+        </div>
+      
+          <!-- Metin Alanı -->
+          <div class="flex-1 text-gray-700">
+            <h3 class="text-3xl font-semibold text-center text-pink-700 mb-8 hover:text-pink-500 transition-colors duration-300 relative group" data-tr="HAKKIMIZDA" data-en="ABOUT US">HAKKIMIZDA</h3>
+            <p class="text-lg leading-relaxed mb-4" 
+            data-tr="Sunshine ailesi olarak pastacılığı yalnızca bir iş değil, bir sanat ve tutku olarak görüyoruz. Her bir pastamız, tıpkı bir tablo gibi özenle hazırlanır; malzemeleri doğadan, ilhamı ise müşterilerimizin gülümsemelerinden alırız." 
+            data-en="At Sunshine, we see baking not just as a job, but as an art and a passion. Each of our cakes is carefully crafted like a piece of art, using ingredients from nature and inspiration from our customers' smiles.">
+                Sunshine ailesi olarak pastacılığı yalnızca bir iş değil, bir sanat ve tutku olarak görüyoruz. Her bir pastamız, tıpkı bir tablo gibi özenle hazırlanır; malzemeleri doğadan, ilhamı ise müşterilerimizin gülümsemelerinden alırız.
+            </p>
+
+            <p class="text-lg leading-relaxed" 
+            data-tr="Yıllardır süregelen deneyimimiz ve el emeğine olan bağlılığımız sayesinde, her ürünümüzde tazeliği ve kaliteyi garanti ediyoruz. Kullandığımız her malzeme titizlikle seçilir; katkı maddelerinden uzak, doğal ve lezzet doludur. Çünkü bizce iyi bir pasta sadece tatlı değil, aynı zamanda güvenli ve sağlıklı da olmalıdır." 
+            data-en="With years of experience and our commitment to craftsmanship, we guarantee freshness and quality in every product. All our ingredients are carefully selected—free from additives, natural, and full of flavor. For us, a good cake isn’t just sweet—it’s also safe and wholesome.">
+                Yıllardır süregelen deneyimimiz ve el emeğine olan bağlılığımız sayesinde, her ürünümüzde tazeliği ve kaliteyi garanti ediyoruz. Kullandığımız her malzeme titizlikle seçilir; katkı maddelerinden uzak, doğal ve lezzet doludur. Çünkü bizce iyi bir pasta sadece tatlı değil, aynı zamanda güvenli ve sağlıklı da olmalıdır.
+            </p>
+
+            <p class="text-lg leading-relaxed" 
+            data-tr="Sunshine’da sadece hazır pastalar sunmakla kalmıyor, aynı zamanda hayallerinizi de şekillendiriyoruz. Doğum günleri, düğünler, baby shower’lar, özel kutlamalar ve kurumsal etkinlikler için isteğe özel tasarım pastalar hazırlıyoruz. Renk, tema, figür ve içerik seçimleri tamamen size özel belirlenir. Hayalinizdeki pastayı birlikte tasarlıyor, özel anlarınızı unutulmaz kılıyoruz." 
+            data-en="At Sunshine, we don’t just offer ready-made cakes—we bring your dreams to life. For birthdays, weddings, baby showers, special celebrations, and corporate events, we create fully custom-designed cakes. Color, theme, figure, and flavor—all are tailored to your wishes. Together, we design the cake of your dreams and make your moments unforgettable.">
+                Sunshine’da sadece hazır pastalar sunmakla kalmıyor, aynı zamanda hayallerinizi de şekillendiriyoruz. Doğum günleri, düğünler, baby shower’lar, özel kutlamalar ve kurumsal etkinlikler için isteğe özel tasarım pastalar hazırlıyoruz. Renk, tema, figür ve içerik seçimleri tamamen size özel belirlenir. Hayalinizdeki pastayı birlikte tasarlıyor, özel anlarınızı unutulmaz kılıyoruz.
+            </p>
+
+       </div>
+                
+        </div>
+      </section>
+      
+    <footer class="bg-pink-50 text-gray-700 py-6 mt-12 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <!-- Marka adı veya bilgi -->
+            <p class="mb-4 text-base font-semibold text-gray-600 text-center" data-tr="© 2025 Sunshine Pastaevi. Tüm hakları saklıdır." data-en="© 2025 Sunshine Bakery. All rights reserved.">
+                © 2025 Sunshine Pastaevi. Tüm hakları saklıdır.
+            </p>
+    
+            <!-- Sosyal medya ikonları -->
+            <p class="text-pink-600 font-semibold text-lg mb-2"data-tr="Bizi Takip Edin"
+            data-en="Follow Us">Bizi Takip Edin</p>
+            <div class="flex space-x-4 items-center justify-center text-center">
+                <a href="mailto:info@sunshine.com" class="hover:text-pink-500 transition-transform transform hover:scale-125 duration-300" aria-label="E-posta">
+                <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/sunsihnecakes " class="hover:text-pink-500 transition-transform transform hover:scale-125 duration-300" aria-label="Instagram">
+                <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-pink-600 transition-transform transform hover:scale-125 duration-300" aria-label="Facebook">
+                <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-pink-400 transition-transform transform hover:scale-125 duration-300" aria-label="Twitter">
+                <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-pink-500 transition-transform transform hover:scale-125 duration-300" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="#" class="hover:text-pink-700 transition-transform transform hover:scale-125 duration-300" aria-label="LinkedIn">
+                <i class="fab fa-linkedin text-xl"></i>
+                </a>
+            </div>
+            <span class="text-base italic text-gray-400 font-medium mt-4">Designed by SZ</span>
+        </div>
+    </footer>  
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+      
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+     <script>
+      // Dil değiştirme fonksiyonu
+      function switchLanguage(lang) {
+          document.querySelectorAll('[data-tr], [data-en]').forEach(el => {
+              el.textContent = el.getAttribute(`data-${lang}`);
+          });
+      }
+
+      // Dil seçimi ve localStorage yönetimi
+      const toggleBtn = document.getElementById("langToggle");
+      const langMenu = document.getElementById("langMenu");
+
+      // Sayfa yüklendiğinde localStorage'dan dil tercihini al ve uygula
+      document.addEventListener("DOMContentLoaded", () => {
+          const savedLang = localStorage.getItem("language") || "tr"; // Varsayılan dil: Türkçe
+          toggleBtn.querySelector("span").textContent = savedLang.toUpperCase();
+          switchLanguage(savedLang);
+      });
+
+      // Dil menüsünü aç/kapat
+      toggleBtn.addEventListener("click", () => {
+          langMenu.classList.toggle("hidden");
+      });
+
+      // Dil seçildiğinde localStorage'a kaydet ve tüm içeriği güncelle
+      langMenu.querySelectorAll("button").forEach(btn => {
+          btn.addEventListener("click", () => {
+              const selectedLang = btn.getAttribute("data-lang");
+              toggleBtn.querySelector("span").textContent = selectedLang.toUpperCase();
+              
+              // Dil tercihini localStorage'a kaydet
+              localStorage.setItem("language", selectedLang);
+              
+              // Sayfadaki içeriği güncelle
+              switchLanguage(selectedLang);
+              
+              langMenu.classList.add("hidden");
+          });
+      });
+  </script>
+       
+</body>
+</html>

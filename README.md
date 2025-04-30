@@ -24,8 +24,10 @@ Temiz ve ölçeklenebilir kod yapısı
 📨 İletişim Formu
 İletişim formu, Node.js backend yapısıyla hazırlanmış olup Nodemailer kullanılarak belirtilen e-posta adresine form verisini gönderir.
 .env dosyası aşağıdaki ortam değişkenlerini içermelidir:
+
 EMAIL=kendimail@gmail.com
 PASS=kendisifren
+
 🚀 Kurulum
 git clone https://github.com/kullaniciadi/sunshine-pastane.git
 cd sunshine-pastane

@@ -7,7 +7,7 @@ Tailwind CSS – Utility-first modern CSS framework
 
 HTML5 – Semantic markup
 
-Vanilla JavaScript – Interactivity & form validation
+JavaScript – Interactivity & form validation
 
 Node.js + Nodemailer – Handles email sending via contact form
 
